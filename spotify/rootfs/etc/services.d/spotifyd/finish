@@ -1,10 +1,10 @@
 #!/command/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: Spotify Connect
+# Home Assistant Community App: Spotify Connect
 # Take down the S6 supervision tree when spotifyd fails
 # ==============================================================================
 if [[ "${1}" -ne 0 ]] && [[ "${1}" -ne 256 ]]; then
-  bashio::log.warning "spotifyd crashed, halting add-on"
+  bashio::log.warning "spotifyd crashed, halting app"
   /run/s6/basedir/bin/halt
 fi
 

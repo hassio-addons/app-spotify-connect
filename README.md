@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Spotify Connect
+# Home Assistant Community App: Spotify Connect
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -20,20 +20,20 @@
 
 Play Spotify music on your Home Assistant device.
 
-![The Spotify Connect add-on](images/screenshot.png)
+![The Spotify Connect app](images/screenshot.png)
 
 ## About
 
-The Home Assistant Spotify Connect add-on allows you to use your device,
-running Home Assistant, to play your Spotify music. This add-on uses the
+The Home Assistant Spotify Connect app allows you to use your device,
+running Home Assistant, to play your Spotify music. This app uses the
 Spotify Connect protocol, which makes it a device that can be controlled
 by all the official clients.
 
-For example; Running Home Assistant on a Raspberry Pi with this add-on
+For example, running Home Assistant on a Raspberry Pi with this app
 installed will allow you to play your Spotify music on the Pi. So all you'll
 have to do is hook up your sound system to the Pi and start booming!
 
-[:books: Read the full add-on documentation][docs]
+[:books: Read the full app documentation][docs]
 
 ## Support
 
@@ -41,14 +41,14 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
+- The [Home Assistant Community Apps Discord chat server][discord] for app
   support and feature requests.
 - The [Home Assistant Discord chat server][discord-ha] for general Home
   Assistant discussions and questions.
 - The Home Assistant [Community Forum][forum].
 - Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
 
-You could also [open an issue here][issue] GitHub.
+You could also [open an issue here][issue] on GitHub.
 
 ## Contributing
 
@@ -67,18 +67,18 @@ The original setup of this repository is by [Franck Nijhof][frenck].
 For a full list of all authors and contributors,
 check [the contributor's page][contributors].
 
-## We have got some Home Assistant add-ons for you
+## We have got some Home Assistant apps for you
 
 Want some more functionality to your Home Assistant instance?
 
-We have created multiple add-ons for Home Assistant. For a full list, check out
+We have created multiple apps for Home Assistant. For a full list, check out
 our [GitHub Repository][repository].
 
 ## License
 
 MIT License
 
-Copyright (c) 2018-2025 Franck Nijhof
+Copyright (c) 2018-2026 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -100,27 +100,27 @@ SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-spotify-connect.svg
-[commits]: https://github.com/hassio-addons/addon-spotify-connect/commits/main
-[contributors]: https://github.com/hassio-addons/addon-spotify-connect/graphs/contributors
+[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/app-spotify-connect.svg
+[commits]: https://github.com/hassio-addons/app-spotify-connect/commits/main
+[contributors]: https://github.com/hassio-addons/app-spotify-connect/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-spotify-connect/blob/main/spotify/DOCS.md
+[docs]: https://github.com/hassio-addons/app-spotify-connect/blob/main/spotify/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-spotify-connect/61210?u=frenck
 [frenck]: https://github.com/frenck
-[github-actions-shield]: https://github.com/hassio-addons/addon-spotify-connect/workflows/CI/badge.svg
-[github-actions]: https://github.com/hassio-addons/addon-spotify-connect/actions
+[github-actions-shield]: https://github.com/hassio-addons/app-spotify-connect/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/app-spotify-connect/actions
 [github-sponsors-shield]: https://frenck.dev/wp-content/uploads/2019/12/github_sponsor.png
 [github-sponsors]: https://github.com/sponsors/frenck
-[issue]: https://github.com/hassio-addons/addon-spotify-connect/issues
-[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-spotify-connect.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
+[issue]: https://github.com/hassio-addons/app-spotify-connect/issues
+[license-shield]: https://img.shields.io/github/license/hassio-addons/app-spotify-connect.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
 [patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-spotify-connect.svg
-[releases]: https://github.com/hassio-addons/addon-spotify-connect/releases
+[releases-shield]: https://img.shields.io/github/release/hassio-addons/app-spotify-connect.svg
+[releases]: https://github.com/hassio-addons/app-spotify-connect/releases
 [repository]: https://github.com/hassio-addons/repository
