@@ -15,7 +15,7 @@ RUN \
     \
     && apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r3 \
-        cargo=1.91.1-r1 \
+        cargo=1.91.1-r2 \
         git=2.52.0-r0 \
         protobuf-dev=31.1-r1 \
         pulseaudio-dev=17.0-r5 \
