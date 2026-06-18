@@ -22,7 +22,7 @@ comparison to installing any other Home Assistant app.
 1. Click the "Install" button to install the app.
 1. Select your audio output device and hit `Save` on that as well.
 1. Start the "Spotify Connect" app.
-1. Check the logs of the "Spotify Connect" to see if everything went well.
+1. Check the logs of the "Spotify Connect" app to see if everything went well.
 1. Ready to go!
 
 ## Configuration
@@ -33,7 +33,7 @@ Example app configuration:
 
 ```yaml
 log_level: info
-name: HomeAssistant
+name: Home Assistant
 bitrate: 320
 initial_volume: 50
 autoplay: true
@@ -59,8 +59,8 @@ more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
-Setting the `log_level` to `debug` will also turn on debug mode on the
-Spotify service.
+Setting the `log_level` to `debug` will also turn on debug mode on
+librespot.
 
 ### Option: `name`
 
@@ -78,8 +78,6 @@ Valid values: `96`, `160` (default) or `320`.
 
 Initial volume in % from 0-100. This setting takes effect when the app starts or
 recovers from a crash.
-
-initial_volume: 50 # Optional
 
 ### Option: `autoplay`
 
@@ -158,4 +156,4 @@ SOFTWARE.
 [issue]: https://github.com/hassio-addons/app-spotify-connect/issues
 [reddit]: https://reddit.com/r/homeassistant
 [releases]: https://github.com/hassio-addons/app-spotify-connect/releases
-[semver]: http://semver.org/spec/v2.0.0.htm
+[semver]: https://semver.org/spec/v2.0.0.html
