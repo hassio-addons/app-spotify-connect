@@ -6,8 +6,6 @@
 declare -a options
 declare bitrate
 declare name
-declare password
-declare username
 declare autoplay
 declare initial_volume
 
@@ -23,17 +21,6 @@ options+=(--initial-volume "$initial_volume")
 # Device name
 name=$(bashio::config 'name')
 options+=(--name "${name}")
-
-# Username / password
-if bashio::config.has_value 'username'; then
-    bashio::config.require.password
-
-    username=$(bashio::config 'username')
-    password=$(bashio::config 'password')
-
-    options+=(--username "${username}")
-    options+=(--password "${password}")
-fi
 
 # Autoplay
 if bashio::config.true 'autoplay'; then

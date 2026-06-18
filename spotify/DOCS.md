@@ -36,8 +36,6 @@ log_level: info
 name: HomeAssistant
 bitrate: 320
 initial_volume: 50
-username: frenck@example.com
-password: MySpotifyPassword
 autoplay: true
 ```
 
@@ -82,20 +80,6 @@ Initial volume in % from 0-100. This setting takes effect when the app starts or
 recovers from a crash.
 
 initial_volume: 50 # Optional
-
-### Option: `username`
-
-**IMPORTANT**: _This requires a Spotify Premium account!_
-
-The username you use to login to your Spotify Premium account. Setting
-this will bind the app to your account exclusively.
-
-This can be helpful when experiencing discovery issues on your network or
-to disallow guests on your network to use the app.
-
-### Option: `password`
-
-The password you use to login to your Spotify Premium account.
 
 ### Option: `autoplay`
 
