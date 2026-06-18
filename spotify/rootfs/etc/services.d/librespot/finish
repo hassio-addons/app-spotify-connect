@@ -1,11 +1,11 @@
 #!/command/with-contenv bashio
 # ==============================================================================
 # Home Assistant Community App: Spotify Connect
-# Take down the S6 supervision tree when spotifyd fails
+# Take down the S6 supervision tree when librespot fails
 # ==============================================================================
 if [[ "${1}" -ne 0 ]] && [[ "${1}" -ne 256 ]]; then
-  bashio::log.warning "spotifyd crashed, halting app"
+  bashio::log.warning "librespot crashed, halting app"
   /run/s6/basedir/bin/halt
 fi
 
-bashio::log.info "spotifyd stopped, restarting..."
+bashio::log.info "librespot stopped, restarting..."

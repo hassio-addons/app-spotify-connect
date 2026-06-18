@@ -9,7 +9,7 @@ declare name
 declare autoplay
 declare initial_volume
 
-bashio::log.info 'Starting the Spotify daemon...'
+bashio::log.info 'Starting librespot...'
 
 # Bitrate
 options+=(--bitrate $(bashio::config 'bitrate'))
