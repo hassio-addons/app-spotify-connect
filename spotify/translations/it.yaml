@@ -18,12 +18,3 @@ configuration:
     name: Volume Iniziale
     description: >-
       Volume iniziale in % da 0 a 100.
-  username:
-    name: Spotify username
-    description: >-
-      Uno username opzionale che puoi usare per accedere al tuo account Spotify Premium.
-      Puó essere utile se hai problemi con l'auto discovery.
-  password:
-    name: Spotify password
-    description: >-
-      La password per accedere al tuo account Spotify Premium.
