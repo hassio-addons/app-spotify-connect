@@ -27,6 +27,21 @@ if bashio::config.true 'autoplay'; then
   options+=(--autoplay on)
 fi
 
+# Authentication
+mkdir -m 0700 -p "/data/system-cache"
+options+=(--system-cache "/data/system-cache")
+
+# Token is short-lived, but it's needed only once to generate credentials.json
+# add it only if there is no credentials.json
+if ! [ -e /data/system-cache/credentials.json ] && bashio::config.has_value 'access_token'; then
+  options+=(--access-token "$(bashio::config 'access_token')")
+fi
+
+# Make it possible to invalidate cached credentials
+if [ -e /data/system-cache/credentials.json ] && bashio::config.is_empty 'access_token'; then
+  rm -f /data/system-cache/credentials.json
+fi
+
 # Save writes
 options+=(--disable-audio-cache)
 
