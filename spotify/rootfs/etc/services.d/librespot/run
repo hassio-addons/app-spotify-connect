@@ -1,18 +1,17 @@
 #!/command/with-contenv bashio
+# shellcheck shell=bash
 # ==============================================================================
 # Home Assistant Community App: Spotify Connect
 # Runs librespot
 # ==============================================================================
 declare -a options
-declare bitrate
 declare name
-declare autoplay
 declare initial_volume
 
 bashio::log.info 'Starting librespot...'
 
 # Bitrate
-options+=(--bitrate $(bashio::config 'bitrate'))
+options+=(--bitrate "$(bashio::config 'bitrate')")
 
 # Initial Volume
 initial_volume=$(bashio::config 'initial_volume')
@@ -28,7 +27,7 @@ if bashio::config.true 'autoplay'; then
 fi
 
 # Authentication
-mkdir -m 0700 -p "/data/system-cache"
+install -d -m 0700 "/data/system-cache"
 options+=(--system-cache "/data/system-cache")
 
 # Token is short-lived, but it's needed only once to generate credentials.json
