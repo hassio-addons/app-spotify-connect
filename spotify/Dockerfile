@@ -21,7 +21,7 @@ RUN \
         pulseaudio-dev=17.0-r7 \
         cmake=4.2.3-r0 \
         clang20-libclang=20.1.8-r3 \
-        openssl-dev=3.5.7-r0 \
+        openssl-dev=3.5.8-r0 \
     \
     && apk add --no-cache \
         pulseaudio=17.0-r7 \
